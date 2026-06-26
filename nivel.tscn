@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b6o3y3svq3i6s"]
+
+[ext_resource type="PackedScene" uid="uid://cc8vmw6pa520a" path="res://jugador.tscn" id="1_h06de"]
+[ext_resource type="PackedScene" uid="uid://bkkrwqxr6i0ib" path="res://pared.tscn" id="2_7gdj4"]
+[ext_resource type="PackedScene" uid="uid://y6ac8m4d5qb" path="res://enemigo.tscn" id="3_7gdj4"]
+
+[node name="Nivel" type="Node2D" unique_id=759790745]
+
+[node name="Jugador" parent="." unique_id=741587221 instance=ExtResource("1_h06de")]
+position = Vector2(550, 300)
+
+[node name="wallUp" parent="." unique_id=1803400117 instance=ExtResource("2_7gdj4")]
+
+[node name="wallDown" parent="." unique_id=178716922 instance=ExtResource("2_7gdj4")]
+position = Vector2(0, 650)
+
+[node name="wallRight" parent="." unique_id=1527065212 instance=ExtResource("2_7gdj4")]
+position = Vector2(1150, 0)
+rotation = 1.5707964
+scale = Vector2(0.574, 1)
+
+[node name="wallLeft" parent="." unique_id=477540559 instance=ExtResource("2_7gdj4")]
+rotation = 1.5707964
+scale = Vector2(0.574, 1)
+
+[node name="Enemigo" parent="." unique_id=226266299 instance=ExtResource("3_7gdj4")]
+position = Vector2(100, 100)

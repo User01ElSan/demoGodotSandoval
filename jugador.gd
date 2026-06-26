@@ -1,13 +1,12 @@
-extends Node2D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-# Detectar si se pulsa la flecha derecha
-	if Input.is_action_pressed("ui_right"):
-		position.x += 200 * delta
+extends CharacterBody2D
+var velocidad: float = 200.0
+
+func _ready() -> void:
+# Mover al jugador al centro de la ventana
+	position = get_viewport_rect().size / 2
+
+func _physics_process(delta: float) -> void:
+	var direccion = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = direccion * velocidad
+	move_and_slide()
