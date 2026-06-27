@@ -25,3 +25,21 @@ scale = Vector2(0.574, 1)
 
 [node name="Enemigo" parent="." unique_id=226266299 instance=ExtResource("3_7gdj4")]
 position = Vector2(100, 100)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=754993735]
+
+[node name="dieMessage" type="Label" parent="CanvasLayer" unique_id=1350463560]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -186.5
+offset_top = -34.5
+offset_right = 186.5
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "💀YOU DIED💀"

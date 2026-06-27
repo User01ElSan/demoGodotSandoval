@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://drt1hr6ucvt0w" path="res://img/Enemigo.jpg" id="1_becj5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_k4ry6"]
-radius = 64.195015
+radius = 70.00714
 
 [node name="Enemigo" type="Area2D" unique_id=226266299]
 script = ExtResource("1_a5tj2")
